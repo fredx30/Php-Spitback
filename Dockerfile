@@ -10,7 +10,7 @@ RUN echo "xdebug.client_port=9003" >> /usr/local/etc/php/conf.d/docker-php-ext-x
 RUN echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini;
 RUN echo "xdebug.start_with_request=yes" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini;
 
-COPY ./index.php /var/www/html/
+COPY ./ /var/www/html/
 
 EXPOSE 80
 EXPOSE 9003

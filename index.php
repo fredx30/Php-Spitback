@@ -24,11 +24,11 @@ if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
-    <title>PHP Spit back</title>
+    <title>PHP Spit-back</title>
 </head>
 <body>
 <div class="container">
-    <h1 class="display-4">PHP Spitback</h1>
+    <h1 class="display-4">PHP Spit-back</h1>
     <div class="accordion" id="accordionPhpSpitBack">
         <div class="accordion-item">
             <h2 class="accordion-header" id="headingOne">
