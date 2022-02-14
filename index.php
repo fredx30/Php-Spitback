@@ -2,13 +2,13 @@
 if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
     ?>
     <pre id="Get">
-        <?= print_r($_GET) ?>
+        <?php print_r($_GET) ?>
     </pre>
     <pre id="Post">
-        <?= print_r($_POST) ?>
+        <?php print_r($_POST) ?>
     </pre>
     <pre id="Request">
-        <?= print_r($_REQUEST) ?>
+        <?php print_r($_REQUEST) ?>
     </pre>
     <?php
     return;
@@ -40,7 +40,7 @@ if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
         </div>
         <div id="collapseGET" class="accordion-collapse collapse show" aria-labelledby="headingOne">
             <div class="accordion-body">
-                <pre><?= print_r($_GET) ?></pre>
+                <pre><?php print_r($_GET) ?></pre>
             </div>
         </div>
         <div class="accordion-item">
@@ -52,7 +52,7 @@ if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
             </h2>
             <div id="collapsePOST" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
                 <div class="accordion-body">
-                    <pre><?= print_r($_POST) ?></pre>
+                    <pre><?php print_r($_POST) ?></pre>
                 </div>
             </div>
         </div>
@@ -78,7 +78,7 @@ if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
             </h2>
             <div id="collapseEnv" class="accordion-collapse collapse" aria-labelledby="headingENV">
                 <div class="accordion-body">
-                    <pre><?= print_r($_ENV) ?></pre>
+                    <pre><?php print_r($_ENV) ?></pre>
                 </div>
             </div>
         </div>
@@ -91,7 +91,7 @@ if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
             </h2>
             <div id="collapseServ" class="accordion-collapse collapse" aria-labelledby="headingServ">
                 <div class="accordion-body">
-                    <pre><?= print_r($_SERVER) ?></pre>
+                    <pre><?php print_r($_SERVER) ?></pre>
                 </div>
             </div>
         </div>
@@ -104,7 +104,7 @@ if (!str_contains($_SERVER["HTTP_USER_AGENT"], "Chrom")) {
             </h2>
             <div id="collapsePhpInfo" class="accordion-collapse collapse" aria-labelledby="headingPhpInfo">
                 <div class="accordion-body">
-                    <pre><?= phpinfo() ?></pre>
+                    <pre><?php phpinfo() ?></pre>
                 </div>
             </div>
         </div>
