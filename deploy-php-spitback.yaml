@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: php-spitback
+  labels:
+    app: php-spitback
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: php-spitback
+  template:
+    metadata:
+      labels:
+        app: php-spitback
+    spec:
+      containers:
+        - name: php-spitback
+          image: ghcr.io/fredx30/php-spitback:master
+          ports:
+            - containerPort: 80
