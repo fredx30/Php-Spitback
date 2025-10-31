@@ -55,7 +55,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ghcr.io/${{ github.repository }}
+          images: ghcr.io/fredx30/php-spitback
           tags: |
             type=sha,format=long
           #type=edge,branch=$repo.default_branch
