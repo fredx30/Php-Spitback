@@ -55,14 +55,10 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: |
-            ${{ github.repository }}
-            ghcr.io/${{ github.repository }}
-          flavor: |
-            latest=true
+          images: ghcr.io/${{ github.repository }}
           tags: |
             type=sha,format=long
-            type=edge,branch=$repo.default_branch
+          #type=edge,branch=$repo.default_branch
 
       # Build and push Docker image with Buildx (don't push on PR)
       # https://github.com/docker/build-push-action
