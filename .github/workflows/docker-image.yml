@@ -20,7 +20,7 @@ env:
   IMAGE_NAME: ${{ github.repository }}
 
 jobs:
-  build:
+  build-and-sign:
     runs-on: ubuntu-latest
     permissions:
       contents: read
